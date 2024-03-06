@@ -12,7 +12,7 @@
     --txt-color: #8A3E74;
     --black-color: #000000;
     --setion-color: #EEEEEE;
-    --btn-colo: #010080;
+    --btn-color: #010080;
     /* font-weight */
     --fw-3: 300;
     --fw-4: 400;
@@ -20,7 +20,7 @@
     --fw-6: 600;
     --fw-7: 700;
     --fw-8: 800;
-        /* font-size */
+    /* font-size */
     --fs-16: 16px;
     --fs-18: 18px;
     --fs-22: 22px;
@@ -28,6 +28,160 @@
     --fs-20: 20px;
     --fs-36: 36px;
     --fs-48: 48px;
-    --fs-144:144px;
+    --fs-144: 144px;
     /* line-height */
+    --lh-54: 54px;
+    --lh-30: 30px;
+    --lh-73: 73px;
+    --lh-36: 36px;
+    --lh-27: 27px;
+    --lh-216: 216px;
+}
+
+* {
+    list-style: none !important;
+    text-decoration: none !important;
+    box-sizing: border-box !important;
+    transition: all 200ms linear !important;
+}
+
+.bg-color {
+    background-color: var(--primary-color);
+}
+
+.poopins {
+    font-family: var(--poopins);
+}
+
+.nav-color {
+    color: var(--nav-color);
+}
+
+.lh-54 {
+    line-height: var(--lh-54);
+}
+
+.lh-30 {
+    line-height: var(--lh-30);
+}
+
+.lh-73 {
+    line-height: var(--lh-73);
+}
+
+.lh-36 {
+    line-height: var(--lh-36);
+}
+
+.lh-27 {
+    line-height: var(--lh-27);
+}
+
+.lh-216 {
+    line-height: var(--lh-216);
+}
+
+.fw-3 {
+    font-weight: var(--fw-3);
+}
+
+.fw-4 {
+    font-weight: var(--fw-4);
+}
+
+.fw-5 {
+    font-weight: var(--fw-5);
+}
+
+.fw-6 {
+    font-weight: var(--fw-6);
+}
+
+.fw-7 {
+    font-weight: var(--fw-7);
+}
+
+.fw-8 {
+    font-weight: var(--fw-8);
+}
+
+.fs-36 {
+    font-size: var(--fs-36);
+}
+
+.fs-16 {
+    font-size: var(--fs-16);
+}
+
+.fs-24 {
+    font-size: var(--fs-24);
+}
+
+.fs-22 {
+    font-size: var(--fs-22);
+}
+
+.fs-20 {
+    font-size: var(--fs-20);
+}
+
+.fs-18 {
+    font-size: var(--fs-18);
+}
+
+.fs-144 {
+    font-size: var(--fs-144);
+}
+
+.gap-45 {
+    gap: 45px;
+}
+
+
+.nav-links:hover {
+    -webkit-text-stroke: 1px;
+}
+
+
+
+@media (max-width:1024px) {
+    .gap-25 {
+        gap: 25px;
+    }
+}
+
+@media (max-width:992px) {
+    .lg-view {
+        flex-direction: column;
+        position: fixed;
+        top: 0%;
+        width: 100%;
+        right: -100%;
+        height: 100%;
+        background-color: var(--primary-color);
+        align-items: center;
+        justify-content: center;
+        transition: all 300ms linear;
+    }
+
+    label[for="menuIcon"] {
+        width: 40px;
+        height: 40px;
+        /* position: absolute; */
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* right: 0; */
+    }
+
+    label[for="menuIcon"] span {
+        width: 100%;
+        background-color: var(--nav-color);
+        height: 6px;
+    }
+
+    input[type="checkbox"]:checked~.lg-view {
+        right: 0%;
+    }
 }
