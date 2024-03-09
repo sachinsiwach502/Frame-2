@@ -22,7 +22,7 @@
 
 <body>
     <header>
-        <nav class="w-100 position-fixed bg-color z-3">
+        <nav class="w-100 position-fixed bg-color z-5">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center">
                     <div>
@@ -38,9 +38,9 @@
                         <a href="#home" class="nav-links poopins fw-4 fs-18 nav-color lh-27">Home</a>
                         <a href="#overview" class="nav-links poopins fw-4 fs-18 nav-color lh-27">Overview</a>
                         <a href="#choice" class="nav-links poopins fw-4 fs-18 nav-color lh-27">Why Choice Us?</a>
-                        <a href="#plan" class="nav-links poopins fw-4 fs-18 nav-color lh-27">Our Plan</a>
-                        <a href="#works" class="nav-links poopins fw-4 fs-18 nav-color lh-27">How it works</a>
-                        <a href="#faq" class="nav-links poopins fw-4 fs-18 nav-color lh-27">FAQs</a>
+                        <a href="#team" class="nav-links poopins fw-4 fs-18 nav-color lh-27">Our Team</a>
+                        <a href="#process" class="nav-links poopins fw-4 fs-18 nav-color lh-27">How it works</a>
+                        <a href="#testionmial" class="nav-links poopins fw-4 fs-18 nav-color lh-27">FAQs</a>
                     </div>
                 </div>
             </div>
@@ -129,7 +129,7 @@
             </div>
         </section>
         <!-- gallery -->
-        <section class="overflow-hidden">
+        <section class="overflow-hidden" id="overview">
             <h2 class="poopins fs-48 fw-7 black text-center lh-72">Gallery</h2>
             <div class="d-flex justify-content-center mt-4"><img src="./assets/images/png/dots.png" alt="dots"></div>
             <div class="slick-slider mt-42">
@@ -574,9 +574,52 @@
             </div>
         </section>
         <!-- w-section -->
-        <section>
-
+        <section class="position-relative min-vh-100 d-flex align-items-center justify-content-center" id="process">
+            <div class="container ">
+                <h2 class="poopins fw-7 fs-43 black text-center lh-72">Our Process</h2>
+                <div class="d-flex align-items-center justify-content-center pb-150">
+                    <img src="./assets/images/png/dots.png" alt="dots">
+                </div>
+                <div class="position-relative">
+                    <img src="./assets/images/png/w-img.png" alt="w-img" class="w-100 pos-none">
+                    <div class="roww">
+                        <div class="pos-1 col6 col12">
+                            <h4 class="poopins fw-7 fs-24 lh-36 black d_max_none">1.Request a free estimate</h4>
+                            <img src="./assets/images/png/pos-1.png" alt="pos-1">
+                            <h4 class="poopins fw-7 fs-24 lh-36 black d_min_none">1.Request a free estimate</h4>
+                        </div>
+                        <div class="pos-2 col6 col12">
+                            <img src="./assets/images/png/pos-2.png" alt="pos-1">
+                            <h4 class="poopins fw-7 fs-24 lh-36 black">2. Schedule Your Service</h4>
+                        </div>
+                        <div class="pos-3 col6 col12">
+                            <h4 class="poopins fw-7 fs-24 lh-36 black d_max_none">3. Extensive Prep Work</h4>
+                            <img src="./assets/images/png/pos-3.png" alt="pos-1">
+                            <h4 class="poopins fw-7 fs-24 lh-36 black d_min_none">3. Extensive Prep Work</h4>
+                        </div>
+                        <div class="pos-4 col6 col12">
+                            <img src="./assets/images/png/pos-4.png" alt="pos-1">
+                            <h4 class="poopins fw-7 fs-24 lh-36 black">4. The Paint Magic Begins</h4>
+                        </div>
+                        <div class="pos-5 col6 col12">
+                            <h4 class="poopins fw-7 fs-24 lh-36 black d_max_none">5. Wash Up & Clean Up</h4>
+                            <img src="./assets/images/png/pos-5.png" alt="pos-1">
+                            <h4 class="poopins fw-7 fs-24 lh-36 black d_min_none">5. Wash Up & Clean Up</h4>
+                        </div>
+                        <div class="pos-6 col6 col12">
+                            <img src="./assets/images/png/pos-6.png" alt="pos-1">
+                            <h4 class="poopins fw-7 fs-24 lh-36 black">6. Perform Inspection</h4>
+                        </div>
+                        <div class="pos-7 col6 col12">
+                            <h4 class="poopins fw-7 fs-24 lh-36 black max-w-270 d_max_none">7. Pay & Enjoy</h4>
+                            <img src="./assets/images/png/pos-7.png" alt="pos-1">
+                            <h4 class="poopins fw-7 fs-24 lh-36 black max-w-270 d_min_none">7. Pay & Enjoy</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
         <!-- our services -->
         <section class="p-100">
             <h2 class="poopins black fw-7 fs-48 lh-72 text-center">Our Services</h2>
@@ -620,9 +663,9 @@
                 </div>
             </section>
             <!-- <section class="mt-250 position-relative">
-                            <div class="position-absolute overflow-paint z-2">
-                                <img src="./assets/images/png/sec-card-overflow.png" alt="sec-card-overflow">
-                            </div>
+                <div class="position-absolute overflow-paint z-2">
+                    <img src="./assets/images/png/sec-card-overflow.png" alt="sec-card-overflow">
+                </div>
                 <div class="pos_changes-1"></div>
                 <div class="px-3">
                     <div class="container position-relative z-2">
@@ -756,7 +799,7 @@
             </div>
         </section>
         <!-- our team  -->
-        <section class="blue pb-100 min-100 position-relative">
+        <section class="blue pb-100 min-100 position-relative" id="team">
             <div class="position-absolute bottom-0 end-0">
                 <img src="./assets/images/png/four-pic-overflow.png" alt="four-pic-overflow">
             </div>
@@ -764,28 +807,28 @@
             <div class="container position-relative top-50">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-12 first mb-lg-24">
-                        <img src="./assets/images/png/four-1.png" alt="four-1" class="img-1">
+                        <img src="./assets/images/png/four-1.png" alt="four-1" class="img-1 object-fit-contain">
                         <div class="flex-prop">
                             <p class="poopins  text-white fs-18 fw-5 lh-27">Team Lead</p>
                             <h4 class="poopins  text-white fs-24 fw-7 lh-36">Frank Woods</h4>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-12 second mb-lg-24">
-                        <img src="./assets/images/png/four-1.png" alt="four-2" class="img-2">
+                        <img src="./assets/images/png/four-1.png" alt="four-2" class="img-2 object-fit-contain">
                         <div class="flex-prop ml-80">
                             <p class="poopins text-center text-white fs-18 fw-5 lh-27">Manager</p>
                             <h4 class="poopins text-center text-white fs-24 fw-7 lh-36">John William</h4>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-12 third">
-                        <img src="./assets/images/png/four-3.png" alt="four-3" class="img-3">
+                        <img src="./assets/images/png/four-3.png" alt="four-3" class="img-3 object-fit-contain">
                         <div class="flex-prop justify-content-end ml-140">
                             <p class="poopins text-center text-white fs-18 fw-5 lh-27">Accounts</p>
                             <h4 class="poopins text-center text-white fs-24 fw-7 lh-36">Michale John</h4>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12 four">
-                        <img src="./assets/images/png/four-4.png" alt="four-4" class="img-4">
+                    <div class="col-lg-3 col-md-6 col-12 four mt-md-24">
+                        <img src="./assets/images/png/four-4.png" alt="four-4" class="img-4 object-fit-contain">
                         <div class="flex-prop ml-80">
                             <p class="poopins text-center text-white fs-18 fw-5 lh-27">CEO</p>
                             <h4 class="poopins text-center text-white fs-24 fw-7 lh-36">Thomas Arthur</h4>
@@ -795,7 +838,7 @@
             </div>
         </section>
         <!-- testinomila -->
-        <section class="position-relative overflow-hidden">
+        <section class="position-relative overflow-hidden" id="testionmial">
             <div class="position-absolute end-0 top-0 right-hdn">
                 <img src="./assets/images/png/testinomal-overflow-left.png" alt="testinomal-overflow-left"
                     class="w-100">
@@ -805,7 +848,7 @@
                     class="w-100 ">
             </div>
             <div class="container p-100">
-                <h2 class="poopins black fw-7 fs-48 lh-72 text-center">
+                <h2 class="poopins black fw-7 fs-48 lh-72 text-center position-relative z-3">
                     Testinomials
                 </h2>
                 <div class="d-flex align-items-center justify-content-center">
@@ -819,7 +862,7 @@
                                 dummy text of
                                 the
                                 printing and typesetting industry.</p>
-                            <h4 class="poopins fw-7 lh-27 fs-18 black">Diane Moreno</h4>
+                            <h4 class="poopins fw-7 lh-27 fs-18 black curser-poiner">Diane Moreno</h4>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
@@ -829,7 +872,7 @@
                                 dummy text of
                                 the
                                 printing and typesetting industry.</p>
-                            <h4 class="poopins fw-7 lh-27 fs-18 black">Max Stoiber</h4>
+                            <h4 class="poopins fw-7 lh-27 fs-18 black curser-poiner">Max Stoiber</h4>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
@@ -839,7 +882,7 @@
                                 dummy text of
                                 the
                                 printing and typesetting industry.</p>
-                            <h4 class="poopins fw-7 lh-27 fs-18 black">Laurie Laforest</h4>
+                            <h4 class="poopins fw-7 lh-27 fs-18 black curser-poiner">Laurie Laforest</h4>
                         </div>
                     </div>
                 </div>
