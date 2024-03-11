@@ -70,5 +70,23 @@ $('.slick-slider-2').slick({
         // instead of a settings object
     ]
 });
+let scroll_top = document.querySelector(".to-top");
 
+let pt = 200;
 
+window.addEventListener("scroll", () => {
+    if (window.scrollY > pt) {
+        scroll_top.style.display = "block";
+    } else {
+        scroll_top.style.display = "none";
+    }
+
+    scroll_top.addEventListener("click", () => {
+        window.scrollTo(
+            {
+                top: 0,
+                behavior: "smooth"
+            }
+        );
+    });
+});
