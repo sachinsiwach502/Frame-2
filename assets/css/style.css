@@ -107,6 +107,32 @@ p {
     color: var(--base-color);
 }
 
+/* body {
+    margin: 0;
+    font-family: var(--poopins);
+}
+
+#loading-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    z-index: 10;
+} */
+
+/* .spinner{
+    border: 6px solid var(--base-color);
+    border-top: 6px solid var(--setion-color);
+    border-radius: 50%;
+
+} */
+
 .blue-color {
     color: var(--btn-color);
 }
@@ -379,11 +405,11 @@ p {
 .to-top {
     width: 50px;
     height: 50px;
-    background: var(--liner-gradient);
+    background-color: var(--primary-color);
     border-radius: 50%;
     position: fixed;
     right: 0;
-    bottom: 0;
+    bottom: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -394,6 +420,13 @@ p {
     -ms-flex-pack: center;
     justify-content: center;
     display: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 50px -3px #D2DA60;
+    border: 1px soli black;
+}
+
+.to-top:hover {
+    background-color: var(--nav-color);
 }
 
 
@@ -917,6 +950,20 @@ p {
         top: 0;
     }
 
+    .col-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .container-box {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .container-box-1 {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
     .pl-201 {
         padding-left: 20px;
     }
@@ -981,6 +1028,10 @@ p {
     .mt-30 {
         margin-top: 30px;
     }
+
+    .fs-md-16 {
+        font-size: var(--fs-16);
+    }
 }
 
 @media (max-width:768px) {
@@ -1020,6 +1071,7 @@ p {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
+
 
     .mt-md-40 {
         margin-top: 40px;
@@ -1064,15 +1116,6 @@ p {
         transform: translate(0%, 0%);
     }
 
-    .container-box {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    .container-box-1 {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
 
     .flex-md-col {
         flex-direction: column;
@@ -1261,6 +1304,8 @@ p {
 
     .pos-none {
         display: none;
+        /* transform: rotate(270deg);
+        bottom: 0; */
     }
 
     .fs-2xl-24 {

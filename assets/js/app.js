@@ -84,3 +84,137 @@ window.addEventListener("scroll", () => {
         );
     });
 });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//     setTimeout(function () {
+//         document.getElementById("loading-screen").style.display = "none";
+//     }, 2000)
+// })
+
+gsap.from(".to-top", {
+    y: 30,
+    repeat: -1,
+    yoyo: true
+});
+
+gsap.from(".nav-links", {
+    scale: 0,
+    duration: 2,
+    opacity: 0,
+    y: -155,
+    scrollTrigger: {
+        trigger: ".nav-links"
+    }
+});
+
+gsap.from(".nav-txt", {
+    scale: 0,
+    duration: 2,
+    opacity: 0,
+    x: -155,
+    // delay: 0.5
+});
+
+gsap.from(".choice", {
+    scale: 0,
+    duration: 2,
+    opacity: 0,
+    x: -155,
+    scrollTrigger: {
+        trigger: ".choice"
+    }
+});
+
+gsap.from(".slick-slider", {
+    scale: 0,
+    duration: 2,
+    opacity: 0,
+    x: -155,
+    scrollTrigger: {
+        trigger: ".slick-slider"
+    }
+});
+
+gsap.from(".part-1", {
+    scale: 0,
+    duration: 2,
+    opacity: 0,
+    x: -155,
+    scrollTrigger: {
+        trigger: ".slick-slider"
+    }
+});
+gsap.from(".part-2", {
+    scale: 0,
+    duration: 2,
+    opacity: 0,
+    x: -155,
+    scrollTrigger: {
+        trigger: "slick-slider"
+    }
+});
+gsap.from("#process", {
+    scale: 0,
+    duration: 2,
+    x: -155,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: "#process"
+    }
+});
+
+gsap.from(".crd-1", {
+    scale: 0,
+    duration: 2,
+    opacity: 0,
+    x: -155,
+    scrollTrigger: {
+        trigger: ".crd-1"
+    }
+});
+gsap.from(".crd-2", {
+    scale: 0,
+    duration: 2,
+    opacity: 0,
+    x: -155,
+    scrollTrigger: {
+        trigger: ".crd-2"
+    }
+});
+gsap.from(".crd-3", {
+    scale: 0,
+    duration: 2,
+    x: -155,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".crd-3"
+    }
+});
+gsap.from(".inspition", {
+    scale: 0,
+    duration: 2,
+    opacity: 0,
+    x: -155,
+    scrollTrigger: {
+        trigger: ".crd-3"
+    }
+});
+
+gsap.from(".team", {
+    scale: 0,
+    duration: 2,
+    opacity: 0,
+    x: -155,
+    scrollTrigger: {
+        trigger: ".team"
+    }
+});
+gsap.from(".testionmial", {
+    scale: 0,
+    duration: 2,
+    opacity: 0,
+    x: -155,
+    scrollTrigger: {
+        trigger: ".testionmial"
+    }
+});
