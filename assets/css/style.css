@@ -814,7 +814,7 @@ p {
     }
 }
 
-@media (max-width:992px) {
+@media (max-width:991.9px) {
     .lg-view {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -875,6 +875,10 @@ p {
 
     .pl-201 {
         padding-left: 20px;
+    }
+
+    .mx-lg-reverse {
+        flex-direction: column-reverse;
     }
 
     .pr-224 {
@@ -1091,7 +1095,7 @@ p {
     }
 
 }
-git 
+
 @media (min-width:2400px) {
     .pos_changes {
         min-width: 2110px;
