@@ -133,12 +133,29 @@ p {
     padding-bottom: 100px;
 }
 
-.mt-250 {
-    margin-top: 250px;
+.mt-300 {
+    margin-top: 300px;
 }
 
 .poopins {
     font-family: var(--poopins);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--nav-color);
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--btn-color);
 }
 
 .sec-3-left {
@@ -367,8 +384,14 @@ p {
     position: fixed;
     right: 0;
     bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     display: none;
 }
@@ -451,8 +474,8 @@ p {
 }
 
 .news {
-    background: -webkit-gradient(linear, left top, right top, from(#9104E5), color-stop(96.47%, #F93B96));
     background: -o-linear-gradient(left, #9104E5 0%, #F93B96 96.47%);
+    background: -webkit-gradient(linear, left top, right top, from(#9104E5), color-stop(96.47%, #F93B96));
     background: linear-gradient(90deg, #9104E5 0%, #F93B96 96.47%);
     -webkit-background-clip: text;
     color: transparent;
@@ -533,6 +556,7 @@ p {
     top: 10%;
     right: 5%;
     bottom: 10%;
+    left: 5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -609,12 +633,16 @@ p {
 .ovrflow-right {
     top: 0;
     right: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
 .overflow-lft {
     top: 0;
     left: 0;
+    -webkit-transform: translate(30%, -70%);
+    -ms-transform: translate(30%, -70%);
     transform: translate(30%, -70%);
 }
 
@@ -638,6 +666,10 @@ p {
 }
 
 
+.py-115 {
+    padding-top: 115px;
+    padding-bottom: 115px;
+}
 
 .py-27 {
     padding-top: 27px;
@@ -707,14 +739,14 @@ p {
     padding-bottom: 100px;
 }
 
-.pos_changes {
+/* .pos_changes {
     position: absolute;
     min-width: 1770px;
     min-height: 800px;
     background-color: var(--setion-color);
     right: 0;
     border-radius: 40px;
-}
+} */
 
 
 /* .pos_changes-1 {
@@ -778,6 +810,16 @@ p {
         right: 0;
     }
 
+    .first-item:hover {
+        .layer {
+            opacity: 1;
+        }
+
+        .hover-box {
+            opacity: 1;
+        }
+    }
+
     .h-lg-100 {
         height: 100%;
     }
@@ -790,6 +832,7 @@ p {
         padding-right: 224px;
     }
 
+    /* 
     .pos_changes {
         min-width: 1770px;
         min-height: 425px;
@@ -799,7 +842,7 @@ p {
         min-width: 1770px !important;
         min-height: 425px !important;
 
-    }
+    } */
 
     .max-w-292 {
         max-width: 292px;
@@ -808,11 +851,12 @@ p {
 
 }
 
+/* 
 @media (max-width:1024px) {
     .gap-25 {
         gap: 25px;
     }
-}
+} */
 
 @media (max-width:991.9px) {
     .lg-view {
@@ -877,7 +921,15 @@ p {
         padding-left: 20px;
     }
 
+    .px-3-lg {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
     .mx-lg-reverse {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
 
@@ -1007,6 +1059,8 @@ p {
     }
 
     .overflow-lft {
+        -webkit-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
         transform: translate(0%, 0%);
     }
 
@@ -1018,6 +1072,10 @@ p {
     .container-box-1 {
         padding-left: 12px;
         padding-right: 12px;
+    }
+
+    .flex-md-col {
+        flex-direction: column;
     }
 
 }
@@ -1033,7 +1091,7 @@ p {
         }
     }
 
-    .pos_changes {
+    /* .pos_changes {
         min-width: 1770px;
         min-height: 425px;
 
@@ -1042,7 +1100,7 @@ p {
     .pos_changes-1 {
         min-width: 1770px !important;
         min-height: 425px !important;
-    }
+    } */
 
     .ml-80 {
         margin-left: 80px;
@@ -1096,6 +1154,7 @@ p {
 
 }
 
+/* 
 @media (min-width:2400px) {
     .pos_changes {
         min-width: 2110px;
@@ -1107,15 +1166,15 @@ p {
         min-width: 2110px;
         min-height: 425px;
     }
-}
+} */
 
 @media (min-width:1440px) {
     .pos-1 {
         top: 0;
         left: 0;
-        -webkit-transform: translate(-20%, -45%);
-        -ms-transform: translate(-20%, -45%);
-        transform: translate(-20%, -45%);
+        -webkit-transform: translate(-30%, -65%);
+        -ms-transform: translate(-30%, -65%);
+        transform: translate(-30%, -65%);
         position: absolute;
     }
 
@@ -1124,8 +1183,8 @@ p {
     }
 
     .pos-2 {
-        top: 50%;
-        left: 9%;
+        top: 64%;
+        left: 8%;
         position: absolute;
     }
 
@@ -1133,15 +1192,15 @@ p {
         position: absolute;
         left: 25%;
         top: 0%;
-        -webkit-transform: translate(2%, -45%);
-        -ms-transform: translate(2%, -45%);
-        transform: translate(2%, -45%);
+        -webkit-transform: translate(2%, -65%);
+        -ms-transform: translate(2%, -65%);
+        transform: translate(2%, -65%);
     }
 
     .pos-4 {
         position: absolute;
-        top: 50%;
-        left: 44%;
+        top: 65%;
+        left: 40%;
     }
 
 
@@ -1149,14 +1208,14 @@ p {
         position: absolute;
         right: 20%;
         top: 0%;
-        -webkit-transform: translate(2%, -50%);
-        -ms-transform: translate(2%, -50%);
-        transform: translate(2%, -50%);
+        -webkit-transform: translate(2%, -65%);
+        -ms-transform: translate(2%, -65%);
+        transform: translate(2%, -65%);
     }
 
     .pos-6 {
         position: absolute;
-        top: 50%;
+        top: 65%;
         right: 5%;
     }
 
@@ -1164,13 +1223,21 @@ p {
         position: absolute;
         top: 0%;
         right: 0%;
-        -webkit-transform: translate(25%, -50%);
-        -ms-transform: translate(25%, -50%);
-        transform: translate(25%, -50%);
+        -webkit-transform: translate(25%, -65%);
+        -ms-transform: translate(25%, -65%);
+        transform: translate(25%, -65%);
     }
 
     .pb-250 {
         padding-bottom: 250px;
+    }
+
+    .container-box {
+        height: 30vh;
+    }
+
+    .container-box-1 {
+        height: 30vh;
     }
 }
 
@@ -1196,6 +1263,10 @@ p {
         display: none;
     }
 
+    .fs-2xl-24 {
+        font-size: var(--fs-24);
+    }
+
     .roww {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1214,6 +1285,10 @@ p {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+    }
+
+    .fs-2xl-2 {
+        font-style: var(--fs-24);
     }
 
     .pb-80 {

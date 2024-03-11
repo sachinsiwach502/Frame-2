@@ -24,13 +24,10 @@ $('.slick-slider').slick({
         {
             breakpoint: 480,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1
             }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
     ]
 });
 $('.slick-slider-2').slick({
@@ -61,13 +58,10 @@ $('.slick-slider-2').slick({
         {
             breakpoint: 480,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1
             }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
     ]
 });
 let scroll_top = document.querySelector(".to-top");
