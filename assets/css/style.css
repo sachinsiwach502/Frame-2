@@ -404,6 +404,7 @@ p {
 
 .to-top {
     width: 50px;
+    z-index: 10;
     height: 50px;
     background-color: var(--primary-color);
     border-radius: 50%;
