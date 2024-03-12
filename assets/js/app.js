@@ -91,11 +91,11 @@ window.addEventListener("scroll", () => {
 //     }, 2000)
 // })
 
-// gsap.from(".to-top", {
-//     y: 30,
-//     repeat: -1,
-//     yoyo: true
-// });
+gsap.from(".to-top", {
+    y: 30,
+    repeat: -1,
+    yoyo: true
+});
 
 // gsap.from(".nav-links", {
 //     scale: 0,
