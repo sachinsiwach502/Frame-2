@@ -159,9 +159,7 @@ p {
     padding-bottom: 100px;
 }
 
-.mt-300 {
-    margin-top: 300px;
-}
+
 
 .poopins {
     font-family: var(--poopins);
@@ -491,6 +489,10 @@ p {
     padding-bottom: 13px;
     padding-left: 20px;
     outline-color: var(--btn-color);
+    font-size: var(--fs-24);
+    font-weight: var(--fw-4);
+    line-height: var(--lh-27);
+    font-family: var(--poopins);
 }
 
 .underline {
@@ -801,8 +803,8 @@ p {
     /* padding-left: 12px;
     padding-right: 12px; */
     background-color: var(--setion-color);
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 12px;
+    padding-right: 12px;
     border-radius: 40px;
 }
 
@@ -811,8 +813,8 @@ p {
     /* padding-left: 12px;
     padding-right: 12px; */
     margin-left: auto;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 12px;
+    padding-right: 12px;
     background-color: var(--setion-color);
     border-radius: 40px;
 }
@@ -836,6 +838,10 @@ p {
 
     .mb-82 {
         margin-bottom: 82px;
+    }
+
+    .mt-300 {
+        margin-top: 300px;
     }
 
     .overflow-img {
@@ -953,6 +959,10 @@ p {
 
     .col-reverse {
         flex-direction: column-reverse;
+    }
+
+    .mt-200 {
+        margin-top: 200px;
     }
 
     .container-box {
@@ -1247,6 +1257,16 @@ p {
         left: 40%;
     }
 
+
+    .container-box {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .container-box-1 {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
 
     .pos-5 {
         position: absolute;
